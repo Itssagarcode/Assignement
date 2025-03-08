@@ -1,0 +1,183 @@
+.blog {
+  padding: 64px 100px;
+  background-color: #000;
+  color: #fff;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  /* border-bottom: 1.5px solid rgba(255, 255, 255, 0.5); */
+  padding-bottom: 16px;
+}
+
+.blog-image {
+  width: 286px; 
+  height: 214px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.blog-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-heading {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.blog-date {
+  font-size: 18px;
+  color: #CBCBCB;
+  margin: 0;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tag-button {
+  background-color:#000;
+  color: white;
+  border: 1px solid #ffffff;
+  padding: 8px 24px;
+  gap: 10px;
+  font-size: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.read-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 16px 32px;
+  gap: 10px;
+  font-size: 14px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.read-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+ /* Responsive Design */
+@media (max-width: 1024px) {
+  .blog {
+    padding: 50px 60px;
+  }
+
+  .blog-heading {
+    font-size: 32px;
+  }
+
+  .blog-date {
+    font-size: 14px;
+  }
+
+  .blog-image {
+    width: 250px;
+    height: 190px;
+  }
+
+  .read-button {
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 40px 40px;
+  }
+
+  .blog-container {
+    gap: 24px;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .blog-heading {
+    font-size: 28px;
+  }
+
+  .blog-date {
+    font-size: 13px;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .read-button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog {
+    padding: 30px 20px;
+  }
+
+  .blog-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .blog-heading {
+    font-size: 24px;
+  }
+
+  .blog-date {
+    font-size: 12px;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .tag-button {
+    font-size: 10px;
+    padding: 4px 16px;
+  }
+
+  .read-button {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+} 

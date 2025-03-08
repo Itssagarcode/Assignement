@@ -1,0 +1,118 @@
+.footer {
+    background-color: #000000; 
+    color: white;
+    padding: 64px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .skills {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .talk-heading {
+    font-size: 64px;
+    font-weight: 800;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+  
+  }
+  
+  .email {
+    color: gray;
+    margin-top: 0px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-top: 0px;
+    color: gray;
+  }
+  
+  .copyright {
+    color: lightgray;
+    font-size: 0.9rem;
+    margin-top: 0px;
+  }
+
+ /* Responsive Design */
+@media (max-width: 1024px) {
+  .footer {
+      padding: 50px 60px;
+  }
+
+  .talk-heading {
+      font-size: 48px;
+  }
+
+  .skills {
+      font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+      padding: 40px 30px;
+  }
+
+  .talk-heading {
+      font-size: 40px;
+  }
+
+  .skills {
+      font-size: 28px;
+      gap: 15px;
+  }
+
+  .email {
+      font-size: 16px;
+  }
+
+  .social-links a {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 30px 20px;
+  }
+
+  .talk-heading {
+      font-size: 32px;
+  }
+
+  .skills {
+      font-size: 24px;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .email {
+      font-size: 14px;
+  }
+
+  .social-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .social-links a {
+      font-size: 16px;
+  }
+
+  .copyright {
+      font-size: 0.8rem;
+  }
+}

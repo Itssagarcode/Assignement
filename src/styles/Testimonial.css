@@ -1,0 +1,144 @@
+.testimonial {
+  padding: 64px 100px;
+
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-text {
+  text-align: left;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.user-role {
+  color: gray;
+  font-size: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: left;
+  max-width: 500px;
+  margin-left: 130px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  margin-left: 50%;
+  margin-top: 3%;
+}
+
+.btn {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #cbcbcb;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .testimonial-content {
+      flex-direction: row;
+      text-align: left;
+  }
+
+  .user-info {
+      flex-direction: row;
+      text-align: left;
+  }
+
+  .quote {
+      text-align: left;
+      margin-left: 0;
+  }
+
+  .nav-buttons {
+      justify-content: center;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+      padding: 50px 40px;
+  }
+
+  .user-img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .quote {
+      font-size: 1rem;
+      max-width: 100%;
+  }
+
+  .btn {
+      width: 35px;
+      height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial {
+      padding: 30px 20px;
+  }
+
+  .testimonial-title {
+      font-size: 1.5rem;
+  }
+
+  .user-img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .quote {
+      font-size: 1rem;
+  }
+
+  .btn {
+      width: 30px;
+      height: 30px;
+  }
+}
