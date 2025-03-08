@@ -7,7 +7,7 @@ import img3 from "../assets/img3.png";
 const Works = () => {
   return (
     <section className="works">
-    <h3 className="section-title">Works</h3>
+    <h3 className="section-title">✶ Works</h3>
     <div className="works-container">
       <div className="work-item">
         <img src={img1} alt="Analysis Application" className="work-image" />
